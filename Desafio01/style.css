@@ -27,7 +27,7 @@
 
 .main-escrito {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 30px;
     padding: 10%;
     width: 50%;
