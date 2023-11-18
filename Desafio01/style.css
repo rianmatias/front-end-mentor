@@ -29,6 +29,32 @@
     color: hsl(231, 7%, 65%);
 }
 
+.logo50 {
+    width: 50%;
+}
+
+.escrito50 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    border-radius: 0px 0px 0px 50px;
+    background-color: hsl(207, 33%, 95%);
+    width: 1000px;
+    height: 500px;
+    top: -100px;
+    left: 0;
+    z-index: -1;
+}
+
+.referencia {
+    position: relative;
+}
+
 .main {
     display: flex;
     flex-direction: row;
@@ -86,4 +112,10 @@
     border-radius: 5px;
     color: white;
     letter-spacing: 1px;
+}
+
+.main-img {
+    position: absolute;
+    top: 375px;
+    right: -50px;
 }
