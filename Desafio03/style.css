@@ -7,21 +7,136 @@
     font-family: 'Outfit', sans-serif;
 }
 
-body {
-    min-height: 100vh;
+main {
     background-color: hsl(217, 54%, 11%);
-    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     background-color: hsl(216, 50%, 16%);
-    width: 400px;
-    height: 500px;
-    margin: 0 auto;
-    
+    width: 350px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 1px 25px 15px 20px hsla(215, 52%, 9%, 0.514);
+    position: relative;
+}
+
+.card p {
+    color: hsl(214, 6%, 55%);
+    font-size: 18px;
 }
 
 .card img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 10px;
+}
+
+.top h1 {
+    font-size: 20px;
+}
+
+.top p {
+    color: hsla(215, 52%, 70%, 0.74);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.top a {
+    text-decoration: none;
+    color: white;
+    width: 170px;
+}
+
+.top a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.mid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.mid p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.eth img {
+    width: 10px;
+    height: 15px;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.clock img {
+    width: 15px;
+    height: 15px;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 300px;
+    padding-top: 20px;
+    gap: 15px;
+}
+
+.avatar p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.avatar img {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.avatar a {
+    text-decoration: none;
+    color: white;
+}
+
+.avatar a:hover {
+    color: hsl(178, 100%, 50%);
 }
