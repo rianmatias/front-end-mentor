@@ -7,68 +7,18 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-main {
-    background-color: hsl(185, 75%, 39%);
-    width: 100vw;
+body  {
+    background: #000000;
+    width: 100%;
     min-height: 100vh;
-    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-    background-repeat: no-repeat no-repeat;
-    background-position: top -23rem left -11rem, bottom -35rem right -10rem;
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .card {
-    background-image: url(images/bg-pattern-card.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
     background-color: white;
     width: 400px;
     height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-}
-.card img {
-    border-radius: 50%;
-    border: 5px solid white;
-}
-
-.top {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
-}
-
-.top h1 {
-    font-size: 22px;
-}
-
-.top p {
-    font-size: 16px;
-    opacity: 60%;
-}
-
-.info {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;  
-    align-items: center;
-}
-
-.info h1 {
-    font-size: 18px;
-}
-
-.info p {
-    font-size: 12px;
-    font-weight: normal;
-    letter-spacing: 1px;
-    opacity: 60%;
 }
