@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 * {
-    padding: 0px;
-    margin: 0px;
     box-sizing: border-box;
 }
 
@@ -11,6 +9,11 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     background-color: hsl(233, 47%, 7%);
-    width: 100vw;
-    min-height: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
