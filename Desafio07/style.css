@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -11,9 +13,66 @@ body {
     background-color: hsl(233, 47%, 7%);
 }
 
-main {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     min-height: 100vh;
+}
+
+.card {
+    width: 1000px;
+    height: 420px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.desc {
+    padding: 4rem;
+    width: 50%;
+}
+
+.desc h1 {
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 1.5rem;
+    font-size: 700;
+    font-size: 2rem;
+}
+
+.desc h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+.desc p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stats span {
+    color: hsl(0, 0%, 100%);
+    text-transform: none;
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
