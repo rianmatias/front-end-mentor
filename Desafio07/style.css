@@ -11,6 +11,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     background-color: hsl(233, 47%, 7%);
+    overflow-x: hidden;
 }
 
 .container {
@@ -19,6 +20,7 @@ body {
     align-items: center;
     width: 100vw;
     min-height: 100vh;
+    padding: 1rem;
 }
 
 .card {
@@ -26,12 +28,11 @@ body {
     max-height: 420px;
     background-color: hsl(244, 38%, 16%);
     border-radius: 0.5rem;
-    position: relative;
     display: flex;
 }
 
 .desc {
-    padding: 4rem;
+    padding: 3rem;
     width: 50%;
 }
 
@@ -95,4 +96,35 @@ body {
 }
 
 @media (max-width: 768px) {
+    .card {
+        flex-direction: column-reverse;
+        max-width: 375px;
+        max-height: 1000px;
+    }
+
+    .desc {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 250px;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .image {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
