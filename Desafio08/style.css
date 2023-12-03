@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    background-color: hsl(30, 38%, 92%);
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.card {
+    max-width: 600px;
+    height: 450px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    display: flex;
+}
+
+.card-img {
+    width: 50%;
+    background-image: url(images/image-product-desktop.jpg);
+    background-size: cover;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.desc {
+    width: 50%;
+    padding: 2rem;
+}
+
+.desc h2 {
+    font-size: 1rem;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding-bottom: 1rem;
+}
+
+.desc h1 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-family: 'Fraunces', sans-serif;
+    padding-bottom: 1.5rem;
+    line-height: 2.2rem;
+}
+
+.desc p {
+    color: hsl(228, 12%, 48%);
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
+    line-height: 1.3rem;
+}
+
+.price p span {
+    color: hsl(158, 36%, 37%);
+    font-size: 2.1rem;
+    font-family: 'Fraunces', sans-serif;
+}
+
+.price p {
+    display: flex;
+    gap: 1.5rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 13%;
+    border-radius: 0.5rem;
+    border: 0px;
+    background-color: hsl(158, 36%, 37%);
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: hsl(159, 37%, 19%);
+    cursor: pointer;
+}
+
+@media (max-width: 625px) {
+    .card {
+        width: 400px;
+        height: 840px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 50%;
+        background-image: url(images/image-product-mobile.jpg);
+        background-size: cover;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .desc {
+        width: 100%;
+        height: 50%;
+    }
+
+    .desc p {
+        font-size: 1rem;
+    }
+}
