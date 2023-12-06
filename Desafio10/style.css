@@ -87,7 +87,8 @@ body {
     align-items: center;
     justify-content: flex-end;
     gap: 2rem;
-    padding: 10rem;
+    padding-bottom: 10rem;
+    padding-right: 2rem;
 }
 
 .facebook i {
@@ -142,7 +143,7 @@ i:hover {
     .social {
         display: flex;
         justify-content: center;
-        padding: 3rem;
+        padding-bottom: 3rem;
     }
 }
 
