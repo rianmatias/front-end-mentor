@@ -70,6 +70,15 @@ body {
     border-radius: 3rem;
     border: 0px;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.514);
+    color: hsl(257, 40%, 49%);
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.b button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
 }
 
 .social {
@@ -78,7 +87,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     gap: 2rem;
-    padding: 3rem;
+    padding: 10rem;
 }
 
 .facebook i {
@@ -107,6 +116,12 @@ body {
     padding: 0.7rem;
 }
 
+i:hover {
+    color: hsl(300, 69%, 71%);
+    border: 2px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
 @media (max-width: 1100px) {
     .container {
         max-width: 768px;
@@ -127,6 +142,7 @@ body {
     .social {
         display: flex;
         justify-content: center;
+        padding: 3rem;
     }
 }
 
