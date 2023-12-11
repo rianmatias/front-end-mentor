@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
+
+.desc h2 {
+    font-weight: 200;
+    font-size: 2.3rem;
+}
+
+.desc h1 {
+    font-size: 2.3rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.desc p {
+    color: hsl(229, 6%, 66%);
+    max-width: 540px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.cards h3 {
+    color: hsl(234, 12%, 34%);
+    padding-bottom: 0.5rem;
+}
+
+.cards span {
+    color: hsl(229, 6%, 66%);
+    font-size: 0.8rem;
+}
+
+.cards .image {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 2rem;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card1{
+    max-width: 350px;
+    max-height: 250px;
+    box-shadow: 1px 10px 10px 4px rgba(0, 0, 0, 0.116);
+    border-radius: 0.3rem;
+    border-top: 4px solid hsl(180, 62%, 55%);
+    padding: 2rem;
+}
+
+.card2{
+    max-width: 350px;
+    max-height: 250px;
+    box-shadow: 1px 10px 10px 4px rgba(0, 0, 0, 0.116);
+    border-radius: 0.3rem;
+    border-top: 4px solid hsl(0, 78%, 62%);
+    padding: 2rem;
+}
+
+.card3{
+    max-width: 350px;
+    max-height: 250px;
+    box-shadow: 1px 10px 10px 4px rgba(0, 0, 0, 0.116);
+    border-radius: 0.3rem;
+    border-top: 4px solid hsl(34, 97%, 64%);
+    padding: 2rem;
+}
+
+.card4{
+    max-width: 350px;
+    max-height: 250px;
+    box-shadow: 1px 10px 10px 4px rgba(0, 0, 0, 0.116);
+    border-radius: 0.3rem;
+    border-top: 4px solid hsl(212, 86%, 64%);
+    padding: 2rem;
+}
+
+@media (max-width: 950px) {
+    .desc {
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .desc h2 {
+        font-size: 1.6rem;
+    }
+    
+    .desc h1 {
+        font-size: 1.6rem;
+    }
+
+    .desc p {
+        font-size: 0.95rem;
+        max-width: 320px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+}
